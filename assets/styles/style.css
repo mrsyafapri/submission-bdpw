@@ -2,6 +2,7 @@
 
 * {
     box-sizing: border-box;
+    overflow-x: clip;
 }
 
 body {
@@ -212,10 +213,11 @@ footer {
 
 /* Responsive Breakpoint */
 /* Ukuran Mobile dan Tablet */
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1000px) {
     .menu-toggle {
         display: flex;
     }
+
     nav ul {
         position: absolute;
         right: 0;
@@ -230,13 +232,12 @@ footer {
         transition: all 1s;
         opacity: 0;
     }
+    
     nav ul.slide {
         opacity: 1;
         transform: translateX(0%);
     }
-}
-
-@media screen and (max-width: 1000px) {
+    
     #content,
     aside {
         width: 100%;

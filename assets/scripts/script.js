@@ -10,5 +10,5 @@ menuToggle.addEventListener('click', function () {
 const date = new Date();
 const year = date.getFullYear();
 
-const footerYear = document.getElementById('footer-year')
+const footerYear = document.getElementById('footer-year');
 footerYear.innerHTML = year;
